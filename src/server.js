@@ -7,7 +7,7 @@ const routes = require('./routes');
 
 const app = express();
 
-mongoose.connect('your_mongo_url_here', {
+mongoose.connect('put_mongo_db_acess_here', {
     useNewUrlParser: true,
     useUnifiedTopology: true
 });
@@ -23,4 +23,4 @@ app.use('/files', express.static(path.resolve(__dirname, '..', 'uploads')));
 app.use(routes);
 
 
-app.listen(3000);
+app.listen(3001);

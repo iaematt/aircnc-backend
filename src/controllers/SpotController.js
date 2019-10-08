@@ -9,7 +9,6 @@ module.exports = {
         return response.json(spots);
     },
 
-
     async store(request, response) {
         const { filename } = request.file;
         const { company, techs, price } = request.body;
